@@ -1,0 +1,19 @@
+- 👋 Hi, I’m @Satyadurga2006
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+Satyadurga2006/Satyadurga2006 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+app.post('/insert', async(req, res) => {
+    await db.collection("ast").insertOne({Name:"satya",Team:"coders"})
+    .then((result)=>{
+        res.json(result)
+    })
+    .catch((e)=>console.log(e))
+})
